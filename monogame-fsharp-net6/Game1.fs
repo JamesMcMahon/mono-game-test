@@ -2,6 +2,7 @@
 
 open Microsoft.Xna.Framework
 open Microsoft.Xna.Framework.Graphics
+open Microsoft.Xna.Framework.Input
 
 type Game1() as x =
     inherit Game()
@@ -32,10 +33,16 @@ type Game1() as x =
         ()
 
     override x.Update(gameTime) =
+        if
+            GamePad.GetState(PlayerIndex.One).Buttons.Back = ButtonState.Pressed
+            || Keyboard.GetState().IsKeyDown(Keys.Escape)
+        then
+            x.Exit()
+
 
         // TODO: Add your update logic here
 
-        base.Update(gameTime)
+        ``base``.Update(gameTime)
 
         ()
 
@@ -45,6 +52,6 @@ type Game1() as x =
 
         // TODO: Add your drawing code here
 
-        base.Draw(gameTime)
+        ``base``.Draw(gameTime)
 
         ()
