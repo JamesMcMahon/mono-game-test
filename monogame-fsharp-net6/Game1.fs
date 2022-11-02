@@ -21,7 +21,7 @@ type Game1() as x =
 
         ()
 
-    override this.LoadContent() =
+    override x.LoadContent() =
 
         // TODO: use x.Content to load your game content here
         // On Windows you can load any PNG file directly as Texture2D
@@ -31,16 +31,20 @@ type Game1() as x =
 
         ()
 
-    override this.Update(gameTime) =
+    override x.Update(gameTime) =
 
         // TODO: Add your update logic here
 
+        base.Update(gameTime)
+
         ()
 
-    override this.Draw(gameTime) =
+    override x.Draw(gameTime) =
 
         x.GraphicsDevice.Clear Color.CornflowerBlue
 
         // TODO: Add your drawing code here
+
+        base.Draw(gameTime)
 
         ()
