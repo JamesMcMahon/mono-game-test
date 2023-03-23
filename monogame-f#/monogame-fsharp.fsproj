@@ -3,6 +3,12 @@
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
     <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>monogame-f#</AssemblyName>
+    <RootNamespace>monogame-f#</RootNamespace>
+    <PackageId>monogame-f#</PackageId>
+    <Authors />
+    <Company>monogame-f#</Company>
+    <Product>monogame-f#</Product>
   </PropertyGroup>
 
   <ItemGroup>

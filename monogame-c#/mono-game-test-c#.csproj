@@ -5,6 +5,12 @@
     <RollForward>Major</RollForward>
     <PublishReadyToRun>false</PublishReadyToRun>
     <TieredCompilation>false</TieredCompilation>
+    <AssemblyName>monogame-c#</AssemblyName>
+    <RootNamespace>monogame-c#</RootNamespace>
+    <PackageId>monogame-c#</PackageId>
+    <Authors />
+    <Company>monogame-c#</Company>
+    <Product>monogame-c#</Product>
   </PropertyGroup>
   <PropertyGroup>
     <ApplicationManifest>app.manifest</ApplicationManifest>
